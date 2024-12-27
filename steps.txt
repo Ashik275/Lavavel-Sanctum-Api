@@ -1,0 +1,10 @@
+Sanctum login hole akta access token return kore then  oi access token use kore baki operations kora lage
+
+Step 1 : run php artisan install:api eita sanctum package install korbe and Routes folder a api.php page create korbe
+
+Step 2 : tarpor Models/User.php page HasApiTokens use korbo
+        use Laravel\Sanctum\HasApiTokens
+        use HasApiTokens;
+
+Step 3 : user login er kaj kora lagbe. Api/AuthController a kora hosie createToken() function sanctum er token create kore
+        
